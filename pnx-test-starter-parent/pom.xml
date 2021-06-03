@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  ~  Copyright (c) 2020-2021
+  ~  This file is part of PnxTest framework.
+  ~
+  ~  PnxTest is free software: you can redistribute it and/or modify
+  ~  it under the terms of the GNU Affero Public License version 3 as
+  ~  published by the Free Software Foundation
+  ~
+  ~  PnxTest is distributed in the hope that it will be useful,
+  ~  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~  GNU Affero Public License for more details.
+  ~
+  ~  You should have received a copy of the GNU Affero Public License
+  ~  along with PnxTest.  If not, see <http://www.gnu.org/licenses/>.
+  ~
+  ~  For more information, please contact the author at this address:
+  ~  chen.baker@gmail.com
+  ~
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.pnxtest</groupId>
+        <artifactId>pnx-test-dependencies</artifactId>
+        <version>1.0.1</version>
+        <relativePath>../pnx-test-dependencies</relativePath>
+    </parent>
+
+    <artifactId>pnx-test-starter-parent</artifactId>
+    <packaging>pom</packaging>
+    <name>pnx-test-starter-parent</name>
+    <description>Parent pom providing dependency and plugin management for applications built with Maven</description>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.pnxtest</groupId>
+                <artifactId>pnx-test-dependencies</artifactId>
+                <version>1.0-SNAPSHOT</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

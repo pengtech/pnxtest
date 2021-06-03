@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~  Copyright (c) 2020-2021
+  ~  This file is part of PnxTest framework.
+  ~
+  ~  PnxTest is free software: you can redistribute it and/or modify
+  ~  it under the terms of the GNU Affero Public License version 3 as
+  ~  published by the Free Software Foundation
+  ~
+  ~  PnxTest is distributed in the hope that it will be useful,
+  ~  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~  GNU Affero Public License for more details.
+  ~
+  ~  You should have received a copy of the GNU Affero Public License
+  ~  along with PnxTest.  If not, see <http://www.gnu.org/licenses/>.
+  ~
+  ~  For more information, please contact the author at this address:
+  ~  chen.baker@gmail.com
+  ~
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.pnxtest</groupId>
+        <artifactId>pnx-test-projects</artifactId>
+        <version>1.0.1</version>
+    </parent>
+
+    <artifactId>pnx-test-bom</artifactId>
+    <packaging>pom</packaging>
+    <name>pnx-test-bom</name>
+    <description>Bill of materials to make sure a consistent set of versions is used for pnxtest modules</description>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.pnxtest</groupId>
+                <artifactId>pnx-test-starter-core</artifactId>
+                <version>1.0.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pnxtest</groupId>
+                <artifactId>pnx-test-starter-http</artifactId>
+                <version>1.0.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pnxtest</groupId>
+                <artifactId>pnx-test-starter-db</artifactId>
+                <version>1.0.1</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+  ~  Copyright (c) 2020-2021
+  ~  This file is part of PnxTest framework.
+  ~
+  ~  PnxTest is free software: you can redistribute it and/or modify
+  ~  it under the terms of the GNU Affero Public License version 3 as
+  ~  published by the Free Software Foundation
+  ~
+  ~  PnxTest is distributed in the hope that it will be useful,
+  ~  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~  GNU Affero Public License for more details.
+  ~
+  ~  You should have received a copy of the GNU Affero Public License
+  ~  along with PnxTest.  If not, see <http://www.gnu.org/licenses/>.
+  ~
+  ~  For more information, please contact the author at this address:
+  ~  chen.baker@gmail.com
+  ~
+  -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:element name="suite">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="test"  maxOccurs="unbounded" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="class" maxOccurs="unbounded" minOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="method" maxOccurs="unbounded" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:attribute name="name" type="xs:string" use="required"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="name" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="name" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:string" use="required"/>
+            <xs:attribute name="description" type="xs:string" default=""/>
+            <xs:attribute name="runMode" type="RunModeNameType" default="sequence"/>
+            <xs:attribute name="threadCount" type="SizeByThreadCount" default="0"/>
+
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="RunModeNameType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="sequence" />
+            <xs:enumeration value="testParalleled" />
+            <xs:enumeration value="classParalleled" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="SizeByThreadCount">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="1" />
+            <xs:maxInclusive value="200" />
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

@@ -1,0 +1,10 @@
+#Intellij project files
+.idea
+*.iml
+target
+integrationTest
+index-origin.html
+pnx-test-starter-synclound
+test-config
+test-outputting
+
