@@ -1,5 +1,5 @@
 # PnxTest
-![image](/.png)
+<img src="logo.png" alt="pnxtest-logo" width="120"/>
 PnxTest is a Java-based test automation framework that unites all testing layers: Mobile applications, WEB applications, REST services.
 Due to fluent API design and rich ecosystem applications, PnxTest will make your automation test more efficient.
 
