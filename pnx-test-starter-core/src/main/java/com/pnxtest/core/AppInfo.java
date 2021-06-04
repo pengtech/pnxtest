@@ -22,7 +22,7 @@
 package com.pnxtest.core;
 
 public class AppInfo {
-    public static final String version="1.0.1";
+    public static final String version="1.0.2";
     public static final String name="PnxTest";
     public static final String owner="PNX";
     public static final String author="nicolas.chen";

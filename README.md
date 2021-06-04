@@ -3,7 +3,7 @@
 PnxTest is a Java-based test automation framework that unites all testing layers: Mobile applications, WEB applications, REST services.
 Due to fluent API design and rich ecosystem applications, PnxTest will make your automation test more efficient.
 
-**Current release version**: 1.0.1
+**Current release version**: 1.0.2
 
 **User guide:** https://pnxtest.com/user-guide
 
@@ -18,7 +18,7 @@ Due to fluent API design and rich ecosystem applications, PnxTest will make your
     <parent>
         <artifactId>pnx-test-starter-parent</artifactId>
         <groupId>com.pnxtest</groupId>
-        <version>1.0.1</version>
+        <version>1.0.2</version>
     </parent>
 
     <dependencies>

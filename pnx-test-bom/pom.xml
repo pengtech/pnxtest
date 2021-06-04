@@ -27,7 +27,7 @@
     <parent>
         <groupId>com.pnxtest</groupId>
         <artifactId>pnx-test-projects</artifactId>
-        <version>1.0.1</version>
+        <version>1.0.2</version>
     </parent>
 
     <artifactId>pnx-test-bom</artifactId>
@@ -40,17 +40,17 @@
             <dependency>
                 <groupId>com.pnxtest</groupId>
                 <artifactId>pnx-test-starter-core</artifactId>
-                <version>1.0.1</version>
+                <version>1.0.2</version>
             </dependency>
             <dependency>
                 <groupId>com.pnxtest</groupId>
                 <artifactId>pnx-test-starter-http</artifactId>
-                <version>1.0.1</version>
+                <version>1.0.2</version>
             </dependency>
             <dependency>
                 <groupId>com.pnxtest</groupId>
                 <artifactId>pnx-test-starter-db</artifactId>
-                <version>1.0.1</version>
+                <version>1.0.2</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
